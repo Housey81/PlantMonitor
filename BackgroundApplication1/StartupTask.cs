@@ -27,7 +27,7 @@ namespace BackgroundApplication1
             _deferral = taskInstance.GetDeferral();
             this.InitGPIO();
 
-            var timer = ThreadPoolTimer.CreatePeriodicTimer(Timer_Tick, TimeSpan.FromMilliseconds(500));
+            var timer = ThreadPoolTimer.CreatePeriodicTimer(Timer_Tick, TimeSpan.FromMilliseconds(50000));
         }
 
         private void Timer_Tick(ThreadPoolTimer timer)
